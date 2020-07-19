@@ -1,4 +1,7 @@
 package com.josycom.mayorjay.cardinfofinder.repository
 
-class CardRepository {
+import com.josycom.mayorjay.cardinfofinder.network.wrapper.CardInfoResponse
+
+interface CardRepository {
+    suspend fun getCardInfo(iin: String): CardInfoResponse
 }
