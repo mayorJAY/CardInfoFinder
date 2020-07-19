@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="app_icon.png" title="App Logo">
+  <img src="app_iicon.png" title="App Logo">
 </p>
 
 # CardInfoFinder
