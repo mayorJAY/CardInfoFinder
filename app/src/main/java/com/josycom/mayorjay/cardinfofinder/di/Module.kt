@@ -24,14 +24,13 @@ val appModule = module {
             .build().create(Api::class.java)
     }
 
-    single<OkHttpClient> {
-
+    single {
         val logger = HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
         }
         val httpClient = OkHttpClient.Builder()
             .addInterceptor(logger)
-            .connectTimeout(30, TimeUnit.SECONDS) //Backend is really slow
+            .connectTimeout(30, TimeUnit.SECONDS)
             .writeTimeout(30, TimeUnit.SECONDS)
             .readTimeout(30, TimeUnit.SECONDS)
             .build()

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/appBackground"
     tools:context=".ui.HomeFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -53,14 +58,16 @@
         android:id="@+id/bt_start"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:text="@string/try_it_out"
-        android:layout_marginTop="24dp"
-        app:cornerRadius="16dp"
+        android:layout_marginTop="100dp"
         android:background="@color/colorPrimary"
+        android:text="@string/try_it_out"
         android:textColor="@color/colorTextWhite"
+        android:textSize="24sp"
+        app:cornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="@id/guideline4"
-        app:layout_constraintTop_toBottomOf="@id/tv_welcome_text"
+        app:layout_constraintEnd_toEndOf="@id/tv_welcome_text"
         app:layout_constraintStart_toStartOf="@id/tv_welcome_text"
-        app:layout_constraintEnd_toEndOf="@id/tv_welcome_text"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

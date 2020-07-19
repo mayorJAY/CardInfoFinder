@@ -3,6 +3,7 @@ package com.josycom.mayorjay.cardinfofinder.utils
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
 
+// Extension method to build a SnackBar
 fun View.snack(
     message: String?,
     length: Int = Snackbar.LENGTH_SHORT,

@@ -4,7 +4,7 @@ import retrofit2.HttpException
 
 class ApiError(private val throwable: Throwable?) : Throwable() {
 
-    override var message: String = NETWORK_ERROR
+    override var message: String = AppConstants.ERROR_MESSAGE
 
     init {
         errorResponse()
@@ -19,16 +19,12 @@ class ApiError(private val throwable: Throwable?) : Throwable() {
                         val json = response.errorBody()?.string()!!
                         json
                     }
-                    else -> NETWORK_ERROR
+                    else -> AppConstants.ERROR_MESSAGE
                 }
             }
             else -> {
-                NETWORK_ERROR
+                AppConstants.ERROR_MESSAGE
             }
         }
-    }
-
-    companion object {
-        const val NETWORK_ERROR = "Please Check Your Network Connection"
     }
 }
