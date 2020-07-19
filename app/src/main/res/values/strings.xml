@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">CardInfoFinder</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="please_input_your_card_number">Please input your Card Number</string>
     <string name="entry_info">This App helps you find details about your Debit or Credit Card. All you have to do is punch in your Card Number and see the Magic</string>
     <string name="try_it_out">Try it out</string>
     <string name="card_number">Card Number</string>
+    <string name="error_msg">Type your Card Number in full</string>
+    <string name="checking">Checking…</string>
 </resources>
