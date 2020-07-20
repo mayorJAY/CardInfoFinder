@@ -21,6 +21,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
     buildFeatures {
         viewBinding true
     }
@@ -47,6 +51,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "androidx.fragment:fragment-ktx:1.2.5"
+    debugImplementation "androidx.fragment:fragment-testing:1.2.5"
+    testImplementation 'org.mockito:mockito-core:2.23.0'
+    androidTestImplementation "androidx.navigation:navigation-testing:2.3.0"
+    androidTestImplementation "androidx.test:rules:1.2.0"
 
     // Koin for DI
     def koin_version = '2.1.6'
