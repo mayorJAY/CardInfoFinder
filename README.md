@@ -6,7 +6,7 @@
 
 With CardInfoFinder, a user can look up some details of their Credit or Debit Card by simply inputting the Card Number. The App makes use of the API at 
 https://binlist.net/. The App was implemented using the MVVM design pattern, Retrofit2, LiveData, ViewModel, Repository pattern, View Binding and Android Recommended 
-App Architecture.
+App Architecture. UI Tests were also implemented in the codebase
 # How it Works
 
 When the user types the Card number, the App extracts the BIN/IIN from the number and passes it through the ViewModel, Repository, DataSource to the method that 
